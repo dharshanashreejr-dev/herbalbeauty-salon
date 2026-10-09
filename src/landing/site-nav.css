@@ -1,0 +1,32 @@
+/* Links to the other pages of the site (Products, Services, About, Tracking, Admin). */
+.header nav a { white-space: nowrap; }
+.nav-admin {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 18px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background 0.3s, color 0.3s;
+}
+.nav-admin:hover { background: var(--cream); color: var(--ink); text-shadow: none; }
+.mobile-panel nav a {
+  text-align: left;
+  font-family: var(--serif);
+  font-size: 40px;
+  padding: 0;
+}
+@media (max-width: 799px) {
+  .nav-tools .nav-admin { display: none; }
+}
+@media (max-width: 1300px) {
+  .nav-admin { padding: 8px 14px; }
+}
+footer nav a { cursor: pointer; }
+.lang-select select option {
+  color: #1a1210;
+  background: #fff;
+}
